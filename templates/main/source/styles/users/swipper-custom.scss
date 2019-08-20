@@ -1,0 +1,26 @@
+.swiper-container {
+
+	height: 100%;
+	width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+
+	width: 22px!important;
+	height: 7px!important;
+	z-index: 11!important;
+	background-repeat: no-repeat;
+	background-size: initial;
+	position: relative;
+}
+
+.swiper-pagination-bullet {
+	background: #BDBEC2;
+	height: 9px;
+	width: 9px;
+}
+
+.swiper-pagination-bullet-active {
+	background: #161616;
+}

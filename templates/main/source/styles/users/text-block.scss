@@ -1,0 +1,18 @@
+.text-block {
+	padding: 90px 0;
+	
+	&_grey {
+		background: #f1f2f5;
+	}
+	
+	&__content {
+		max-width: 742px;
+		margin: 0 auto;
+		font-size: 20px;
+		font-weight: 500;
+	}
+	
+	@media all and (max-width: 768px) {
+		padding: 30px 0;
+	}
+}

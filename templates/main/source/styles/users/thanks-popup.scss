@@ -1,0 +1,33 @@
+.thanks-popup {
+	padding: 40px 30px 35px;
+	
+	&__text {
+		font-size: 22px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #161616;
+		font-weight: 700;
+	}
+	
+	&__pic {
+		display: block;
+		width: 70px;
+		margin: 0 auto 30px;
+	}
+	
+	&__img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	
+	@media all and (max-width: 768px) {
+		
+		padding-right: 15px;
+		padding-left: 15px;
+	
+		&__text {
+			font-size: 20px;
+		}
+	}
+}

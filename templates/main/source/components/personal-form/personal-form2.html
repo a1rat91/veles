@@ -1,0 +1,28 @@
+<div class="personal-form">
+	<div class="container">
+		<div class="personal-form__title">
+			УЗНАТЬ О ЦЕНАХ, ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+			ИЛИ ПЕРСОНАЛЬНОЕ ПРЕДЛОЖЕНИЕ
+		</div>
+		<!-- /.section-title -->
+		<form action="" class="personal-form__form">
+			<div class="personal-form__top">
+				<input type="text" class="personal-form__input input" placeholder="Имя" required>
+				<!-- /.personal-form__input -->
+				<input type="tel" class="personal-form__input input" placeholder="Телефон" required>
+				<!-- /.personal-form__input -->
+				<button class="personal-form__btn btn" type="submit">ПОЛУЧИТЬ</button>
+				<!-- /.personal-form__button btn -->
+			</div>
+			<!-- /.personal-form__top -->
+			<div class="personal-form__bottom">
+				{{ check.check(class="personal-form", text="Даю согласие на обработку персональных данных", req="required", checked="checked") }}
+			</div>
+			<!-- /.personal-form__bottom -->
+		</form>
+		<!-- /.personal-form__form -->
+	</div>
+	<!-- /.container -->
+</div>
+<!-- /.personal-form -->
+

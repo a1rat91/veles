@@ -1,0 +1,111 @@
+.page-head {
+	position: relative;
+	height: 395px;
+	width: 100%;
+	
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: top center;
+		background-size: cover;
+	}
+	
+	
+	
+	&_unloading {
+		&:before {
+			background-image: url(../images/page-head-1.jpg);
+		}
+	}
+	
+	&_packing {
+		&:before {
+			background-image: url(../images/fasovka.jpg);
+		}
+	}
+	
+	&_crushed-stone {
+		&:before {
+			background-image: url(../images/page-head-2.jpg);
+		}
+	}
+	
+	&_crane-site {
+		&:before {
+			background-image: url(../images/kran.jpg);
+		}
+	}
+	
+	&__content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		text-align: center;
+	}
+	
+	&__text {
+		font-size: 70px;
+		text-transform: uppercase;
+		color: #ffffff;
+		font-weight: 300;
+		letter-spacing: 0.25em;
+	}
+	
+	&__btn {
+		max-width: 370px;
+		height: 60px;
+		margin: 40px auto 0;
+		background: rgba(#000, .4);
+		border: 1px solid #ffffff;
+		font-size: 15px;
+		letter-spacing: 0.13em;
+		font-weight: 500;
+	}
+	
+	@media all and (max-width: 768px) {
+		
+		&:before {
+			display: none;
+		}
+		
+		&_unloading {
+				background: url(../images/page-head-1.jpg) no-repeat center center;
+		}
+		
+		&_packing {
+				background: url(../images/fasovka.jpg) no-repeat center center;
+		}
+		
+		&_crushed-stone {
+				background: url(../images/page-head-2.jpg) no-repeat center center;
+		}
+		
+		&_crane-site {
+				background: url(../images/kran.jpg) no-repeat center center;
+		}
+		
+		&:before {
+			background-position: top -110px center;
+		}
+		
+		&__text {
+			font-size: 30px;
+		}
+		
+		&__btn {
+			height: 55px;
+			max-width: 250px;
+			width: auto;
+			padding: 10px 25px;
+			margin-top: 25px;
+		}
+	}
+}

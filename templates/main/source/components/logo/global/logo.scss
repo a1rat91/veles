@@ -1,0 +1,21 @@
+.logo {
+	position: relative;
+	z-index: 15;
+
+	&__link {
+		text-decoration: none;
+		display: block;
+	}
+
+	&__pic {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	
+	@media all and (max-width: 768px) {
+		.footer & {
+			margin-bottom: 40px;
+		}
+	}
+}

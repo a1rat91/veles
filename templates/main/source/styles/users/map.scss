@@ -1,0 +1,52 @@
+.map {
+	position: relative;
+	padding: 60px 0;
+	background: #F7F9FB;
+	
+	&__desc {
+		margin-top: -120px;
+	}
+	
+	&__title {
+		@include section-title($text-transform: inherit);
+		letter-spacing: 0;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+	
+	&__text {
+		line-height: normal;
+		font-size: 15px;
+		color: #161616;
+		max-width: 292px;
+	}
+	
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 100px;
+		
+	}
+	
+	@media all and (max-width: 768px) {
+		
+		margin: 0 -15px;
+		
+		&__block {
+			max-width: 450px;
+			margin: 0 auto;
+		}
+	
+		&__title {
+			font-size: 20px;
+		}
+	}
+}
+
+@media all and (max-width: 768px) {
+	
+	#landmarks-ground .land {
+		//display: none;
+	}
+}

@@ -1,0 +1,21 @@
+<div class="menu" id="js-menu" aria-expanded="false">
+	<nav>
+		<ul class="menu__list">
+			{% for item in data.menu.top %} 
+			<li class="menu__item">
+				<a href="#" class="menu__link"><span>{{ item }}</span></a>
+			</li>
+			{% endfor %}
+		</ul>
+	</nav>
+	<div class="menu-bottom hidden-xl">
+		<div class="footer__make">
+			Сайт создан компанией: <a href="javascript:void(0);">WEDO</a>
+		</div>
+		<!-- /.footer__make -->
+		<a class="footer__link" href="mailto:wedo@yandex.ru">
+			<img src="images/mail-icon.svg" alt="">wedo@yandex.ru</a>
+	
+	</div>
+</div>
+<!--end menu-->

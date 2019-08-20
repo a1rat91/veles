@@ -1,0 +1,36 @@
+<div class="personal-form">
+	<div class="container">
+		<div class="personal-form__title">
+			Получить персональное предложение
+		</div>
+		<!-- /.section-title -->
+		<form name="request" method="POST" action="php/function-send-form.php" class="sendler personal-form__form">
+			<div class="personal-form__top">
+				<input name="name" title="Введите имя" tabindex="1" confirminfo=".response" type="text" class="personal-form__input input Y-required" placeholder="Имя" required="required">
+				<!-- /.personal-form__input -->
+				<input type="tel" name="phone" confirminfo=".response" title="Заполните телефон" class="personal-form__input input Y-required" placeholder="Телефон" required>
+				<!-- /.personal-form__input -->
+				<input name="message" title="Наименование формы" class="Y-required hidden" tabindex="3" confirminfo=".response" value="Форма Получить персональное предложение на главной">
+				
+				<button class="personal-form__btn btn" type="submit">ПОЛУЧИТЬ</button>
+				<!-- /.personal-form__button btn -->
+			</div>
+			<!-- /.personal-form__top -->
+			<div class="personal-form__bottom">
+				<label class="checkbox personal-form__checkbox">
+					<input type="checkbox" class="checkbox__input Y-required" title="Даю согласие на обработку персональных данных" id="checkbox" tabindex="5" confirminfo=".response" checked="checked" required>
+					<span class="checkbox__icon"></span>
+					<span class="checkbox__text">Даю согласие на обработку персональных данных</span>
+				</label>
+				<!-- /.checkbox -->
+				
+				<div class="response"></div>
+			</div>
+			<!-- /.personal-form__bottom -->
+		</form>
+		<!-- /.personal-form__form -->
+	</div>
+	<!-- /.container -->
+</div>
+<!-- /.personal-form -->
+

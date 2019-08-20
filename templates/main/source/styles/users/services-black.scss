@@ -1,0 +1,151 @@
+.services-black {
+	background: $bgColor;
+	color: #ffffff;
+	position: relative;
+	display: flex;
+	
+	&__title {
+		position: relative;
+		margin-bottom: 23px;
+		@include section-title($text-align: left);
+		color: #fff;
+		
+		span {
+			white-space: nowrap;
+		}
+	}
+	
+	&__text {
+		font-size: 15px;
+	}
+	
+	&__content {
+		z-index: 1;
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+		min-height: 703px;
+		padding: 150px 690px 150px 15px;
+		
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			width: 1000%;
+			height: 100px;
+			background: #ffffff;
+			margin-left: -50%;
+		}
+	}
+	
+	&__pic {
+		width: 50.2%;
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		left: auto;
+		z-index: 3;
+		margin-top: 137px;
+	}
+	
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		font-family: 'object-fit: cover;';
+	}
+	
+	&__btn {
+		color: #ffffff;
+		border: 1px solid #ffffff;
+		margin-top: 40px;
+		max-width: 277px;
+	}
+	
+	@media all and (max-width: 768px) {
+		
+		min-height: 333px;
+		flex-direction: column-reverse;
+		padding: 0 15px 35px;
+	
+		&__pic {
+			margin: 0;
+			position: relative;
+			width: 100%;
+			
+			&:before {
+				content: '';
+				display: block;
+				width: 1000%;
+				height: 40px;
+				background: #ffffff;
+				position: absolute;
+				top: 0;
+				left: -15px;
+				right: -15px;
+			}
+		}
+		
+		&__img {
+			display: block;
+			width: 100%;
+			height: auto;
+			min-height: 267px;
+			-o-object-fit: cover;
+			object-fit: cover;
+			font-family: "object-fit: cover;";
+			max-width: 570px;
+			max-height: 488px;
+			margin: 0 auto;
+			position: relative;
+			z-index: 1000;
+		}
+		
+		&__content {
+			padding: 20px 0 0;
+			margin-left: 0;
+			min-height: 100%;
+			text-align: center;
+			
+			&-inner {
+				padding: 0;
+				
+				&:before {
+					display: none;
+				}
+			}
+			
+			&:after {
+				display: none;
+			}
+		}
+		
+		&__title {
+			font-size: 18px;
+			text-transform: uppercase;
+			max-width: 230px;
+			margin: 0 auto 20px;
+			text-align: center;
+			
+			span {
+				font-size: 14px;
+				top: 2px;
+			}
+		}
+		
+
+		
+		&__btn {
+			margin: 30px auto 0;
+		}
+	}
+}

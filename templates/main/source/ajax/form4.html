@@ -1,0 +1,29 @@
+
+<!--Фасовка мрамора-->
+
+<div class="form-popup">
+	
+	<div class="form-popup__title">
+		Оставьте заявку
+	</div>
+	<!-- /.form-popup__title -->
+	
+	<form name="request" method="POST" action="php/function-send-form.php" class="sendler form-popup__form">
+		
+		<input name="name" title="Введите имя" tabindex="1" confirminfo=".response" type="text" class="form-popup__input input Y-required" placeholder="Имя" required="required">
+		<!-- /.form-popup__input -->
+		<input type="tel" name="phone" title="Заполните телефон" class="form-popup__input input Y-required" placeholder="Телефон" tabindex="2" confirminfo=".response" required="required">
+		<!-- /.form-popup__input -->
+		
+		<input name="message" title="Наименование формы" class="Y-required hidden" tabindex="3" confirminfo=".response" value="Фасовка мрамора">
+		
+		<button class="form-popup__btn btn" type="submit" name="submitbtn" tabindex="4" value="Отправить">Получить консультацию</button>
+		<div class="response"></div>
+	</form>
+	<!-- /.form-popup__form -->
+	
+</div>
+
+<script>
+	$('[type=tel]').mask("8 (999) 999-9999", {placeholder: "8 (Код) ___-____"});
+</script>

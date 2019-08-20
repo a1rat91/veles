@@ -1,0 +1,149 @@
+.footer {
+	background: $bgColor;
+	position: relative;
+	line-height: 1;
+	min-width: 1200px;
+	z-index: 10;
+	
+	&__top {
+		height: 126px;
+		padding-top: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
+		border-bottom: 1px solid rgba(255, 255, 255, .35);
+		
+		&-top {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+		}
+	}
+	
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 20px;
+		padding-top: 8px;
+	}
+	
+	&__bottom-left {
+		color: #ffffff;
+			display: flex;
+			align-items: center;
+			font-weight: 300;
+	}
+	
+	&__make {
+		font-size: 16px;
+		opacity: .8;
+		margin-right: 15px;
+		transition: .4s;
+		
+		.footer__top-bottom:hover & {
+			opacity: 1;
+		}
+		
+		a {
+			color: #FFE500;
+			border-bottom: 1px solid #FFE500;
+		}
+	}
+	
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__link {
+		margin-right: 25px;
+		color: #d1d1d1;
+		transition: .4s;
+
+		&:last-child {
+			margin-right: 0;
+		}
+		
+		img {
+			width: 17px;
+			height: 12px;
+			margin-right: 2px;
+		}
+		
+		.footer__top-bottom:hover & {
+			opacity: 1;
+			color: #ffffff;
+		}
+	}
+	
+	&__dis {
+		font-size: 10px;
+		color: rgba(255, 255, 255, .4);
+		text-align: right;
+		padding: 15px 0 17px;
+	}
+	
+	@media all and (max-width: 768px) {
+		
+		min-width: 320px;
+		text-align: center;
+		padding-top: 40px;
+		
+		&__link {
+			display: block;
+			margin-bottom: 15px;
+			font-size: 15px;
+			text-align: center;
+		}
+	
+		&__top {
+			height: auto;
+			align-items: center;
+			padding-bottom: 20px;
+			border-bottom: none;
+			
+			&-top {
+				display: flex;
+				flex-direction: column;
+			}
+			
+			&-bottom {
+				padding-top: 0;
+			}
+		}
+		
+		&__make {
+			margin-right: 0;
+			white-space: nowrap;
+			margin-bottom: 15px;
+			font-size: 15px;
+		}
+		
+		&__logo {
+			margin-bottom: 30px;
+		}
+		
+		&__dis {
+			font-size: 14px;
+			text-align: center;
+		}
+		
+		&__bottom {
+			margin-left: -15px;
+			margin-right: -15px;
+			flex-direction: column;
+		}
+		
+		&__bottom-left {
+			flex-direction: column;
+		}
+		
+		&__bottom-right {
+			margin-top: 10px;
+			border-top: 1px solid hsla(0,0%,100%,.35);
+		}
+	}
+
+}

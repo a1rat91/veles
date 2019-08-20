@@ -1,0 +1,64 @@
+.mapplic-element {
+	width: 735px;
+	height: 650px;
+	margin: 0 auto;
+	
+	@media all and (max-width: 768px) {
+		
+		width: 100%;
+		height: auto !important;
+	}
+}
+
+
+.mapplic-clickable#work-area {
+	fill: #54341D!important;
+}
+.mapplic-clickable#work-area * {
+	opacity: 1!important;
+	fill: #54341D!important;
+}
+
+.mapplic-clickable {
+	fill: transparent!important;
+	
+	rect {
+		fill: transparent!important;
+	}
+	
+	&#warehouse5,
+	&#warehouse11,
+	&#warehouse10,
+	&#warehouse12 {
+		path {
+			fill: #D7E0E9!important;
+		}
+	}
+	
+	&#office,
+	&#warehouse9{
+		path {
+			fill: #D7E0E9!important;
+		}
+		
+		.path1 {
+			fill: #A1A8AD!important;
+		}
+	}
+	
+	&#warehouse6 {
+		
+		.path {
+			fill: #A1A8AD!important;
+		}
+		.path1 {
+			fill: #AE9379!important;
+		}
+		
+		.path2 {
+			fill: #5A575B!important;
+		}
+		
+		
+	}
+}

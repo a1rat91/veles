@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<title>Veles</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<script type="text/javascript" src="js/mobile.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+
+
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+
+		<header class="header geometria">
+			<div class="container">
+				<div class="header__blocks">
+					<div class="header__block">
+						<div class="logo">
+							<a href="/" class="logo__link">
+								<img src="images/logo.svg" alt="" class="logo__pic">
+							</a>
+						</div>
+						<!-- /.logo -->
+					</div>
+					<div class="header__block header__block_wide">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<span></span>
+						</button>
+						<div class="menu" id="js-menu" aria-expanded="false">
+							<nav>
+								<ul class="menu__list">
+
+									<li class="menu__item">
+										<a href="/#land-lease" class="menu__link"><span>Земля</span></a>
+									</li>
+
+									<li class="menu__item">
+										<a href="kranovaya-ploshchadka.html" class="menu__link"><span>Крановые площадки</span></a>
+									</li>
+
+									<li class="menu__item">
+										<a href="vygruzka-vagonov.html" class="menu__link"><span>выгрузка вагонов</span></a>
+									</li>
+
+									<li class="menu__item">
+										<a href="fasovka.html" class="menu__link active"><span>фасовка</span></a>
+									</li>
+
+									<li class="menu__item">
+										<a href="shcheben.html" class="menu__link"><span>щебень</span></a>
+									</li>
+
+								</ul>
+							</nav>
+							<div class="menu-bottom hidden-xl">
+								<div class="footer__make">
+									Сайт создан компанией: <a href="javascript:void(0);">WEDO</a>
+								</div>
+								<!-- /.footer__make -->
+								<a class="footer__link" href="mailto:wedo@yandex.ru">
+									<img src="images/mail-icon.svg" alt="">wedo@yandex.ru</a>
+
+							</div>
+						</div>
+						<!--end menu-->
+
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+
+		<!-- WORKAREA -->
+
+		<div class="page-head page-head_packing">
+			<div class="page-head__content">
+				<div class="page-head__text">
+					Фасовка
+				</div>
+				<!-- /.page-head__text -->
+				<button data-ajax="" data-url="ajax/form.html" class="page-head__btn btn">Получить консультацию</button>
+			</div>
+		</div>
+		<!-- /.page-head -->
+
+		<div class="packing">
+			<div class="container">
+				<div class="packing__text">
+					Предлагаем услуги фасовки сыпучей непродовольственной продукции <b>от 300 грамм до 1
+
+				тонны</b>. Фасовка производится в полиэтилен, мешки и биг-беги разных размеров. Предложения принимаем при заказе от 1 тонны.
+				</div>
+				<div class="packing__title">
+					Готовый фасованный продукт
+				</div>
+				<div class="packing__list-wrap">
+					<ul class="packing__list">
+						<li class="packing__item">
+							<a href="" class="packing__link">
+								<span class="packing__pic">
+
+						<img src="images/packing-gallery-1.jpg" alt="" class="packing__img">
+
+					</span>
+							</a>
+						</li>
+						<li class="packing__item">
+							<a href="" class="packing__link">
+								<span class="packing__pic">
+
+						<img src="images/packing-gallery-2.jpg" alt="" class="packing__img">
+
+					</span>
+							</a>
+						</li>
+						<li class="packing__item">
+							<a href="" class="packing__link">
+								<span class="packing__pic">
+
+						<img src="images/packing-gallery-3.jpg" alt="" class="packing__img">
+
+					</span>
+							</a>
+						</li>
+						<li class="packing__item">
+							<a href="" class="packing__link">
+								<span class="packing__pic">
+
+						<img src="images/packing-gallery-4.jpg" alt="" class="packing__img">
+
+					</span>
+							</a>
+						</li>
+						<li class="packing__item">
+							<a href="" class="packing__link">
+								<span class="packing__pic">
+
+						<img src="images/packing-gallery-5.jpg" alt="" class="packing__img">
+
+					</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="personal-form personal-form_grey xs-pdb-0">
+			<div class="container">
+				<div class="personal-form__title">
+					Получить персональное предложение
+				</div>
+				<!-- /.section-title -->
+				<form name="request" method="POST" action="php/function-send-form.php" class="sendler personal-form__form">
+					<div class="personal-form__top">
+						<div class="personal-form__input-wrap">
+							<input name="name" title="Введите имя" tabindex="1" confirminfo=".response" type="text" class="personal-form__input input Y-required" placeholder="Имя" required="required">
+							<!-- /.personal-form__input -->
+						</div>
+						<!-- /.personal-form__input-wrap -->
+						<div class="personal-form__input-wrap">
+							<input type="tel" name="phone" confirminfo=".response" title="Заполните телефон" class="personal-form__input input Y-required" placeholder="Телефон" required="">
+							<!-- /.personal-form__input -->
+						</div>
+						<!-- /.personal-form__input-wrap -->
+
+						<input name="message" title="Наименование формы" class="Y-required hidden" tabindex="3" confirminfo=".response" value="Форма Получить персональное предложение на главной">
+
+						<button class="personal-form__btn btn" type="submit">ПОЛУЧИТЬ</button>
+						<!-- /.personal-form__button btn -->
+					</div>
+					<!-- /.personal-form__top -->
+					<div class="personal-form__bottom">
+						<label class="checkbox personal-form__checkbox">
+							<input type="checkbox" class="checkbox__input Y-required" title="Даю согласие на обработку персональных данных" id="checkbox" tabindex="5" confirminfo=".response" checked="checked" required="">
+							<span class="checkbox__icon"></span>
+							<span class="checkbox__text">Даю согласие на обработку персональных данных</span>
+						</label>
+						<!-- /.checkbox -->
+
+						<div class="response"></div>
+					</div>
+					<!-- /.personal-form__bottom -->
+				</form>
+				<!-- /.personal-form__form -->
+			</div>
+			<!-- /.container -->
+		</div>
+
+		<div class="services-jd">
+
+			<div class="container">
+
+				<div class="services-jd__row">
+
+					<div class="services-jd__content">
+						<div class="services-jd__title">
+							Кормовая ракушка
+						</div>
+						<!-- /.services-jd__title -->
+						<div class="services-jd__text mgb-15 js-read-more read-more">
+							Использование кормовой ракушки повышает продуктивность сельскохозяйственных птиц и животных, улучшает качество скорлупы и инкубационные свойства яиц, способствует сохранности молодняка.
+							<br><br>Ракушка кормовая без побочных эффектов устраняет хрупкость костей, нарушения кальциевого обмена, нормализует протекание в организме биохимических реакций. Добавление в рацион морской кормовой ракушки позволяет компенсировать дефицит кальция
+							в кормах. Данный продукт является наиболее экономичным источником кальция.
+							<br><br>Ракушка кормовая выступает в качестве сырья при производстве комбикормов для сельскохозяйственной птицы и животных, а также применяется непосредственно при кормлении птицы и животных в качестве минеральной добавки естественного происхождения,
+							получаемой из природных залежей.
+							<br><br>Морская кормовая ракушка выступает также в качестве гастролита - вещества, которое улучшает измельчение, перетирание и усвоение пищи мускусным желудком декоративных и домашних птиц.
+							<br><br>Стоит также сказать и о том, что в организме птиц генетически заложено потребление ракушечника, поэтому кальций и другие микроэлементы полностью усваиваются птицей, что является существенным отличием натуральной морской ракушки от минеральных
+							добавок, выведенных искусственным путем.
+							<br><br>Группа Компаний ВЕЛЕС является поставщиком Каспийской морской кормовой ракушки. Предлагаемая нами морская ракушка добывается в Каспийском море, а не карьерным способом, поэтому не содержит песка, грунта и посторонних примесей.
+						</div>
+						<!-- /.services-jd__text -->
+
+						<a href="" data-ajax="" data-url="ajax/form.html" class="services-jd__btn btn">Получить консультацию</a>
+						<!-- /.services-jd__btn btn -->
+					</div>
+					<!-- /.services-jd__content -->
+					<div class="services-jd__pic-wrap">
+						<div class="services-jd__pic">
+							<img data-src="images/services-jd.jpg" alt="" class="services-jd__img lazyloaded" src="images/kormovaya-rakushka.jpg">
+							<!-- /.services-jd__img -->
+						</div>
+						<!-- /.services-jd__pic -->
+					</div>
+					<!-- /.services-jd__pic-wrap -->
+				</div>
+				<!-- /.services-jd__row -->
+
+			</div>
+			<!-- /.container -->
+
+		</div>
+
+		<div class="services-black">
+			<div class="services-black__content">
+
+				<div class="services-black__content-inner">
+					<div class="services-black__title">
+						Кормовой мел
+					</div>
+					<!-- /.services-black__title -->
+					<div class="services-black__text js-read-more read-more">
+						Кальций является основным «строительным материалом» в костных тканях, он важен для иммунитета, необходим для нормального течения нервной деятельности, улучшает репродуктивные способности. Однако, в обычных кормах кальций присутствует в недостаточной концентрации.
+						Именно поэтому в рацион животных необходимо вводить кормовой мел, содержащий до 38% данного элемента. Добавлять мел в рацион животных и птиц необходимо ежедневно. Прудовая рыба также нуждается в кальции, поэтому и в её комбикорм необходимо подмешивать
+						1-2% мела.
+						<br><br>Наличие достаточного количества мела в ежедневном рационе животных обеспечит их кальцием, нормализует обмен веществ, предотвратит рахит у молодняка, сократит период откорма, улучшит репродуктивные функции взрослых особей, повысит яйценоскость
+						у птиц.
+						<br><br>Мел кормовой природный молотый применяют животным и птице внутрь в смеси с сухими кормами или влажными мешанками.
+					</div>
+
+					<a href="" data-ajax="" data-url="ajax/form.html" class="services-black__btn btn">Получить консультацию</a>
+					<!-- /.services-black__btn btn -->
+				</div>
+				<!-- /.services-black__content-inner -->
+			</div>
+			<!-- /.services-black__content -->
+			<div class="services-black__pic">
+				<img data-src="images/mel.jpg" alt="" class="services-black__img lazyload">
+				<!-- /.services-black__img -->
+			</div>
+			<!-- /.services-black__pic -->
+		</div>
+		<!-- /.services-black -->
+
+		<div class="services-jd">
+
+			<div class="container">
+
+				<div class="services-jd__row">
+
+					<div class="services-jd__content">
+						<div class="services-jd__title">
+							Кормовая соль
+						</div>
+						<!-- /.services-jd__title -->
+						<div class="services-jd__text js-read-more read-more">
+							Кормовая соль – необходимая составляющая рациона крупного рогатого скота, птицы и других домашних животных. Продукт изготавливается их технической соли, которую дополнительно очищают от остатков пород и вредных веществ. Кормовая соль применяется как в
+							чистом виде, например, изготовленные из нее лизунцы размещают на пастбищах, так и в качестве добавки в готовый корм для животных. Минеральные соли участвуют в процессе обмена веществ, кроме того, они необходимы для контроля водного режима. Натрий
+							хлор важен для нервной системы и правильной работы мышц. От соотношения минеральных веществ в организме зависит качество обмена азотистых веществ.
+							<br><br>Недостаток данного минерала в организме снижает синтез жиров и протеинов, провоцирует снижение аппетита у молодняка, а также ухудшает рост организма.
+						</div>
+						<!-- /.services-jd__text -->
+
+						<a href="" data-ajax="" data-url="ajax/form.html" class="services-jd__btn btn">Получить консультацию</a>
+						<!-- /.services-jd__btn btn -->
+					</div>
+					<!-- /.services-jd__content -->
+					<div class="services-jd__pic-wrap">
+						<div class="services-jd__pic">
+							<img data-src="images/services-jd.jpg" alt="" class="services-jd__img lazyloaded" src="images/services-jd.jpg">
+							<!-- /.services-jd__img -->
+						</div>
+						<!-- /.services-jd__pic -->
+					</div>
+					<!-- /.services-jd__pic-wrap -->
+				</div>
+				<!-- /.services-jd__row -->
+
+			</div>
+			<!-- /.container -->
+
+		</div>
+
+		<!-- END WORKAREA -->
+
+	</div>
+	<!-- /.wrapper -->
+
+	<div class="footer" id="js-footer">
+
+		<div class="container">
+
+			<div class="footer__top">
+
+				<div class="footer__top-top">
+					<div class="logo">
+						<a href="/" class="logo__link">
+							<img src="images//logo.svg" alt="" class="logo__pic">
+						</a>
+					</div>
+
+					<ul class="menu-footer__list">
+
+						<li class="menu-footer__item">
+							<a href="/#land-lease" class="menu-footer__link"><span>Земля</span></a>
+						</li>
+
+						<li class="menu-footer__item">
+							<a href="kranovaya-ploshchadka.html" class="menu-footer__link"><span>Крановые площадки</span></a>
+						</li>
+
+						<li class="menu-footer__item">
+							<a href="vygruzka-vagonov.html" class="menu-footer__link"><span>выгрузка вагонов</span></a>
+						</li>
+
+						<li class="menu-footer__item">
+							<a href="fasovka.html" class="menu-footer__link active"><span>фасовка</span></a>
+						</li>
+
+						<li class="menu-footer__item">
+							<a href="shcheben.html" class="menu-footer__link"><span>Щебень</span></a>
+						</li>
+
+					</ul>
+				</div>
+				<!-- /.footer__top-top -->
+
+			</div>
+			<!-- /.footer__top -->
+			<div class="footer__bottom">
+				<div class="footer__bottom-left">
+					<div class="footer__make">
+						Сайт создан компанией: <a href="javascript:void(0);">WEDO</a>
+					</div>
+					<!-- /.footer__make -->
+					<a class="footer__link" href="mailto:wedo@yandex.ru">
+						<img src="images/mail-icon.svg" alt="">wedo@yandex.ru</a>
+				</div>
+				<div class="footer__bottom-right">
+					<div class="footer__dis">
+						© 2018 « VELES» Все права защищены.
+					</div>
+					<!-- /.footer__dis -->
+				</div>
+			</div>
+			<!-- /.footer__bottom -->
+		</div>
+		<!-- /.footer__inner -->
+
+	</div>
+	<!-- /.footer -->
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/script.min.js"></script>
+	<script type="text/javascript" src="js/polifils.js"></script>
+
+
+	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+	<script>
+		var yaBrowserUpdater = new ya.browserUpdater.init({
+			"lang": "ru",
+			"browsers": {
+				"yabrowser": "15.12",
+				"chrome": "54",
+				"ie": "11",
+				"opera": "41",
+				"safari": "8",
+				"fx": "49",
+				"iron": "35",
+				"flock": "Infinity",
+				"palemoon": "25",
+				"camino": "Infinity",
+				"maxthon": "4.5",
+				"seamonkey": "2.3"
+			},
+			"theme": "yellow"
+		});
+	</script>
+
+
+
+
+</body>
+
+</html>

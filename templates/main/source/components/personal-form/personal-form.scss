@@ -1,0 +1,133 @@
+.personal-form {
+	margin-bottom: 110px;
+	
+	&_grey {
+		background: #F1F2F5;
+		padding-top: 70px;
+		padding-bottom: 70px;
+		margin-bottom: 0;
+	}
+	
+	&__title {
+		@include section-title();
+		max-width: 770px;
+		margin: 130px auto 35px;
+		font-size: 25px;
+		
+		.personal-form_grey & {
+			margin-top: 0;
+		}
+	}
+	
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	&__top {
+		display: flex;
+		margin-bottom: 30px;
+	}
+	
+	&__btn {
+		height: 55px;
+		width: 168px;
+		margin-left: 7px;
+		margin-right: 7px;
+		
+		&:hover {
+			border: 1px solid #000000;
+		}
+	}
+	
+	&__input {
+		height: 55px;
+		width: 250px;
+		margin-left: 7px;
+		margin-right: 7px;
+		padding: 5px 20px;
+		
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: #bdbdbd;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+		  color: #bdbdbd;
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+		  color: #bdbdbd;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+		  color: #bdbdbd;
+		}
+		
+		.personal-form_grey & {
+			border: 1px solid rgba(#161616, .3);
+			background: #ffffff;
+		}
+	}
+	
+	@media all and (max-width: 768px) {
+		
+		padding-top: 55px;
+		margin-bottom: 0;
+		padding-bottom: 50px;
+		
+		&_grey {
+			background: #ffffff!important;
+		}
+		
+	
+		&__title {
+			font-size: 18px;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		
+		&__top {
+			flex-wrap: wrap;
+		}
+		
+		&__bottom {
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+		}
+		
+		&__input {
+			width: 100%;
+			margin: 0;
+			border-radius: 0;
+			font-size: 14px;
+			
+			.personal-form_grey & {
+				background: #f2f2f2;
+				border: 1px solid #f2f2f2;
+			}
+			
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				color: #828282;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+				color: #828282;
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+				color: #828282;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+				color: #828282;
+			}
+			
+			&-wrap {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+		}
+		
+		&__btn {
+			width: 100%;
+			margin: 0;
+		}
+	}
+}

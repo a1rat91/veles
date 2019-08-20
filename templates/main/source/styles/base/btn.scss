@@ -1,0 +1,28 @@
+.btn {
+	background: #161616;
+	border: none;
+	color: #ffffff;
+	font-family: $sf;
+	font-size: 12px;
+	width: 100%;
+	height: 55px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+	transition: .5s;
+	letter-spacing: 0.13em;
+	
+	&:hover {
+		background: #ffffff;
+		color: #161616;
+		border: 1px solid #161616;
+		transition: .4s;
+	}
+	
+	@media all and (max-width: 768px) {
+		
+		font-size: 12px;
+	}
+}

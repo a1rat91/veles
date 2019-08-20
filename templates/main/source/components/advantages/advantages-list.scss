@@ -1,0 +1,48 @@
+.advantages-list {
+	background: #F1F2F5;
+	padding: 60px 0 50px;
+	
+	&__list {
+		padding: 0;
+		list-style-type: none;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	
+	&__item {
+		background: #ffffff;
+		box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.102355);
+		border-radius: 5px;
+		padding: 25px 40px;
+		margin-bottom: 40px;
+		
+		.advantages-item {
+			margin-bottom: 0;
+		}
+	}
+	
+	&__title {
+		@include section-title($text-transform:inherit, $letter-spacing: 0);
+		margin-bottom: 40px;
+	}
+	
+	@media all and (max-width: 768px) {
+		padding: 0;
+		background: #ffffff;
+		
+		&_crane-site {
+			padding-top: 35px;
+		}
+		
+		&__title {
+			margin-bottom: 30px;
+			font-size: 20px;
+		}
+		
+		&__item {
+			padding: 0;
+			box-shadow: none;
+			margin-bottom: 35px;
+		}
+	}
+}

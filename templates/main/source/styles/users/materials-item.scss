@@ -1,0 +1,36 @@
+.materials-item {
+	background: #FFFFFF;
+	box-shadow: 0 30px 80px rgba(0, 0, 0, 0.102355);
+	padding: 30px;
+	height: 100%;
+	
+	&__num {
+		font-size: 50px;
+		color: rgba(#FFE500, .2);
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: 20px;
+	}
+	
+	&__title {
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+		position: relative;
+		margin-bottom: 25px;
+		display: inline-block;
+	}
+	
+	&__line {
+		position: absolute;
+		display: block;
+		height: 3px;
+		width: 85px;
+		background: #000000;
+		bottom: -12px;
+		transition: width .5s;
+		.materials-item:hover & {
+			width: 100%;
+		}
+	}
+}

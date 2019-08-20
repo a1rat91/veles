@@ -1,0 +1,32 @@
+.read-more {
+	overflow: hidden;
+	transition: height .5s;
+	margin-bottom: 20px!important;
+	
+	&__link {
+		color: #ffa800;
+		font-size: 16px;
+		position: relative;
+		display: inline-block;
+		
+		&:after {
+			content: '';
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDEyIDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMC42IDAuOTc0MTIxTDYgNS41NTY5OUwxLjQgMC45NzQxMjFMMCAyLjM2ODkxTDYgOC4zNDY1NkwxMiAyLjM2ODkxTDEwLjYgMC45NzQxMjFaIiBmaWxsPSIjRkZBODAwIi8+PC9zdmc+);
+			width: 12px;
+			height: 8px;
+			display: block;
+			position: absolute;
+			right: -21px;
+			top: 50%;
+			transform: translateY(-50%);
+			transition: .5s;
+		}
+		
+		&.active {
+			&:after {
+				transition: .5s;
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+	}
+}

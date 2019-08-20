@@ -1,0 +1,54 @@
+{% macro check(class="", text="",name="", value="", req="", checked="") %}
+
+<label class="checkbox {{ class }}__checkbox">
+	<input type="checkbox" class="checkbox__input"  name="{{ name }}" value="{{ value }}" {{ checked }} {{ req }}>
+	<span class="checkbox__icon"></span>
+	<span class="checkbox__text">{{ text }}</span>
+</label>
+<!-- /.checkbox -->
+
+{% endmacro %}
+
+{% macro advantage(img="", img@2x="", img@3x="", title="", text="") %}
+
+<div class="advantage__col">
+	<div class="advantage__pic">
+		<img src="{{ img }}" srcset="{{ img@2x }} 2x, {{ img@3x }} 3x" alt="" class="advantage__img lazyload">
+		<!-- /.advantage__img -->
+	</div>
+	<!-- /.advantage__pic -->
+	<div class="advantage__title">{{ title }}</div>
+	<!-- /.advantage__title -->
+	<div class="advantage__text">{{ text }}</div>
+	<!-- /.advantage__text -->
+</div>
+<!-- /.advantage__col -->
+
+{% endmacro %}
+
+{% macro advantage2(img="", title="", text="") %}
+
+<div class="advantage__col">
+	<div class="advantage__pic">
+		<img src="{{ img }}" alt="" class="advantage__img lazyload">
+		<!-- /.advantage__img -->
+	</div>
+	<!-- /.advantage__pic -->
+	<div class="advantage__title">{{ title }}</div>
+	<!-- /.advantage__title -->
+	<div class="advantage__text">{{ text }}</div>
+	<!-- /.advantage__text -->
+</div>
+<!-- /.advantage__col -->
+
+{% endmacro %}
+
+{% macro pic(class="", img="", img@2x="", img@3x="") %}
+
+<div class="{{ class }}__pic">
+	<img src="{{ img }}" srcset="{{ img@2x }} 2x, {{ img@3x }} 3x" alt="" class="{{ class }}__img lazyload">
+	<!-- /.{{ class }}__img -->
+</div>
+<!-- /.{{ class }}__pic -->
+
+{% endmacro %}

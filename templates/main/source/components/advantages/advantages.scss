@@ -1,0 +1,37 @@
+.advantages {
+	padding: 100px 0;
+	
+	&__title {
+		@include section-title($text-transform: inherit);
+		margin-bottom: 40px;
+		letter-spacing: 0;
+	}
+	
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		@include row($align-items: stretch);
+	}
+	
+	&__item {
+		width: calc(100% / 3);
+	}
+	
+	@media all and (max-width: 768px) {
+		padding-top: 0;
+		padding-bottom: 25px;
+		
+		&__title {
+			font-size: 20px;
+		}
+		
+		&__list {
+			flex-direction: column;
+		}
+		
+		&__item {
+			width: 100%;
+		}
+	}
+}

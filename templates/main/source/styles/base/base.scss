@@ -1,0 +1,116 @@
+body {
+	font-family: $font-family;
+	font-size: $font-size;
+	font-weight: $font-weight;
+	line-height: $line-height;
+	color: $color;
+}
+
+a {
+	color: $colorLink;
+}
+
+a:hover {
+	//text-decoration: underline;
+}
+
+.hidden {
+	display: none;
+}
+
+.body-hidden {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.hidden-xl {
+	display: none!important;
+	
+	@media all and (max-width: 768px) {
+		
+		display: block!important;
+	}
+}
+
+.hidden-xs {
+	display: none!important;
+	
+	@media all and (min-width: 769px) {
+		
+		display: block!important;
+	}
+}
+
+.mgb-15 {
+	margin-bottom: 15px!important;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.marker {
+	position: relative;
+	display: inline;
+	box-shadow: inset 0 12px #fff, inset 0 50px rgba(255, 229, 0, .2);
+}
+
+.fsz-20 {
+	font-size: 20px!important;
+}
+
+.ttu {
+	text-transform: uppercase;
+}
+
+.pdb-0 {
+	padding-bottom: 0 !important;
+}
+
+.pdt-0 {
+	padding-top: 0 !important;
+}
+
+.section {
+	padding: 70px 0;
+}
+
+.xl-fsz-30 {
+	font-size: 30px!important;
+}
+
+@media all and (max-width: 768px) {
+	.xs-pdt-0 {
+		padding-top: 0!important;
+	}
+	
+	.xs-pdt-10 {
+		padding-top: 10px!important;
+	}
+	
+	.xs-pdt-20 {
+		padding-top: 20px!important;
+	}
+	
+	.xs-pdt-30 {
+		padding-top: 30px!important;
+	}
+	
+	.xs-pdb-0 {
+		padding-bottom: 0!important;
+	}
+	
+	.xs-mgb-25 {
+		margin-bottom: 25px !important;
+	}
+	
+	.xs-mgb-0 {
+		margin-bottom: 0px !important;
+	}
+	
+	.xs-fsz-20 {
+		font-size: 20px !important;
+	}
+}

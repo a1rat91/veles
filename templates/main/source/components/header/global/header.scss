@@ -1,0 +1,42 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	align-items: center;
+	background: $bgColor;
+	padding: 0;
+	position: relative;
+
+	.header-inner & {
+		flex-direction: row-reverse;
+	}
+
+	&__logo {
+
+	}
+
+	&__phone {
+
+	}
+	
+	&__blocks {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	&__block {
+	
+	}
+	
+	@media all and (max-width: 768px) {
+		
+		height: auto;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 30px;
+		z-index: 2;
+		background: transparent;
+	}
+}
