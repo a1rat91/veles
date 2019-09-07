@@ -1,2 +1,5 @@
 node_modules/
 .idea
+templates/main/build/mail-tpl
+templates/main/build/php
+templates/main/build/sendler

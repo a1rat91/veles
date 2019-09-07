@@ -4,10 +4,10 @@ $__smtp = array(
 	"debug" 		=> 0,
 	"auth" 			=> true,
 	"port" 			=> '465',
-	"username" 		=> 'a1rat91@yandex.ru',
-	"password" 		=> '100afulismans0n',
-	"addreply" 		=> 'a1rat91@yandex.ru',
-	"replyto" 		=> 'a1rat91@yandex.ru',
+	"username" 		=> 'my@yandex.ru',
+	"password" 		=> '***',
+	"addreply" 		=> 'client@list.ru',
+	"replyto" 		=> 'noreply@mail.ru',
 	"secure" 		=> 'ssl'
 );
 ?>

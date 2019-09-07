@@ -76,8 +76,6 @@
 			</div>
 		</header>
 
-
-
 		<!-- WORKAREA -->
 		<div class="page-head page-head_crushed-stone">
 			<div class="page-head__content">
@@ -85,7 +83,7 @@
 					Щебень
 				</div>
 				<!-- /.page-head__text -->
-				<button data-ajax="" data-url="ajax/form.html" class="page-head__btn btn">Получить консультацию</button>
+				<button data-ajax="" data-url="ajax/shcheben.html" class="page-head__btn btn">Получить консультацию</button>
 			</div>
 		</div>
 		<!-- /.page-head -->
@@ -249,10 +247,17 @@
 							<div class="materials-form__title">
 								Узнать о ценах, получить консультацию или персональное предложение
 							</div>
-							<form action="">
-								<input type="text" class="materials-form__input" placeholder="Имя">
-								<input type="tel" name="phone" class="materials-form__input" placeholder="Телефон">
-								<button class="btn materials-form__btn">Отправить</button>
+
+							<form class="sendler" name="request" method="POST" action="php/function-send-form.php">
+								<input name="name" title="Введите имя" tabindex="1" confirminfo=".response" type="text" class="materials-form__input Y-required" placeholder="Имя" required="required">
+								<!-- /.personal-form__input -->
+								<input type="tel" name="phone" confirminfo=".response" title="Заполните телефон" class="materials-form__input Y-required" placeholder="Телефон" required>
+								<!-- /.personal-form__input -->
+								<input name="message" title="Наименование формы" class="Y-required hidden" tabindex="3" confirminfo=".response" value="Форма Получить персональное предложение на странице щебень">
+
+								<button class="btn materials-form__btn" type="submit">Отправить</button>
+								<!-- /.personal-form__button btn -->
+								<div class="response"></div>
 							</form>
 						</div>
 					</li>
@@ -460,7 +465,7 @@
 						</div>
 						<!-- /.personal-form__input-wrap -->
 
-						<input name="message" title="Наименование формы" class="Y-required hidden" tabindex="3" confirminfo=".response" value="Форма Получить персональное предложение на главной">
+						<input name="message" title="Наименование формы" class="Y-required hidden" tabindex="3" confirminfo=".response" value="Форма Получить персональное предложение на странице щебень">
 
 						<button class="personal-form__btn btn" type="submit">Отправить</button>
 						<!-- /.personal-form__button btn -->

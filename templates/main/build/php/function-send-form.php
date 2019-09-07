@@ -22,15 +22,15 @@ if(isset($_POST)) {
 
    		 $mail = new PHPMailer(true);
 
-  		 $mail->IsMail();
-  		 // $mail->Host       = $__smtp['host'];
-    	//  $mail->SMTPDebug  = $__smtp['debug'];
-    	//  $mail->SMTPAuth   = $__smtp['auth'];
-    	//  $mail->Port       = $__smtp['port'];
-   		//  $mail->SMTPSecure = $__smtp['secure'];
+  		 $mail->IsSMTP();
+  		 $mail->Host       = $__smtp['host'];
+    	 $mail->SMTPDebug  = $__smtp['debug'];
+    	 $mail->SMTPAuth   = $__smtp['auth'];
+    	 $mail->Port       = $__smtp['port'];
+   		 $mail->SMTPSecure = $__smtp['secure'];
        $mail->CharSet    = "UTF-8";
-       // $mail->Username   = $__smtp['username'];
-       // $mail->Password   = $__smtp['password'];
+       $mail->Username   = $__smtp['username'];
+       $mail->Password   = $__smtp['password'];
        //кому письмо
     	 $mail->AddAddress($__smtp['addreply']);                
     	 // $mail->AddReplyTo($email, $name);

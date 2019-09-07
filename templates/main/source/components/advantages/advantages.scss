@@ -1,6 +1,10 @@
 .advantages {
 	padding: 100px 0;
 	
+	&_main {
+		padding-bottom: 0;
+	}
+	
 	&__title {
 		@include section-title($text-transform: inherit);
 		margin-bottom: 40px;

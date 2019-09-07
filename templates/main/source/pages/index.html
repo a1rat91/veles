@@ -31,7 +31,8 @@
 								</li>
 								
 								<li class="menu__item">
-									<a href="kranovaya-ploshchadka.html" class="menu__link"><span>Крановые площадки</span></a>
+									<a href="kranovaya-ploshchadka.html"
+									   class="menu__link"><span>Крановые площадки</span></a>
 								</li>
 								
 								<li class="menu__item">
@@ -85,7 +86,8 @@
 							</div>
 							<!-- /.main-section__title-wrap -->
 							
-							<a href="#" data-ajax="" data-url="ajax/form.html" class="main-section__btn btn" data-swiper-parallax="-100">
+							<a href="#" data-ajax="" data-url="ajax/main-form.html" class="main-section__btn btn"
+							   data-swiper-parallax="-100">
 								Заказать
 							</a>
 							<!-- /.main-section__btn btn-->
@@ -122,7 +124,8 @@
 							</div>
 							<!-- /.main-section__title-wrap -->
 							
-							<a href="#" data-ajax="" data-url="ajax/form.html" class="main-section__btn btn" data-swiper-parallax="-100">
+							<a href="#" data-ajax="" data-url="ajax/vygruzka-vagonov.html" class="main-section__btn btn"
+							   data-swiper-parallax="-100">
 								Заказать
 							</a>
 							<!-- /.main-section__btn btn-->
@@ -159,7 +162,8 @@
 							</div>
 							<!-- /.main-section__title-wrap -->
 							
-							<a href="#" data-ajax="" data-url="ajax/form.html" class="main-section__btn btn" data-swiper-parallax="-100">
+							<a href="#" data-ajax="" data-url="ajax/fasovka.html" class="main-section__btn btn"
+							   data-swiper-parallax="-100">
 								Заказать
 							</a>
 							<!-- /.main-section__btn btn-->
@@ -237,7 +241,8 @@
 					</div>
 					<!-- /.services-jd__text -->
 					
-					<a href="" data-ajax="" data-url="ajax/form.html" class="services-jd__btn btn">Получить консультацию</a>
+					<a href="" data-ajax="" data-url="ajax/arenda-zemly.html" class="services-jd__btn btn">Получить
+						консультацию</a>
 					<!-- /.services-jd__btn btn -->
 				</div>
 				<!-- /.services-jd__content -->
@@ -274,7 +279,8 @@
 					инженерных сетей.
 				</div>
 				
-				<a href="" data-ajax="" data-url="ajax/form.html" class="services-black__btn btn">Получить консультацию</a>
+				<a href="" data-ajax="" data-url="ajax/arenda-skladov.html" class="services-black__btn btn">Получить
+					консультацию</a>
 				<!-- /.services-black__btn btn -->
 			</div>
 			<!-- /.services-black__content-inner -->
@@ -361,7 +367,8 @@
 					</li>
 					
 					<li class="menu-footer__item">
-						<a href="kranovaya-ploshchadka.html" class="menu-footer__link"><span>Крановые площадки</span></a>
+						<a href="kranovaya-ploshchadka.html"
+						   class="menu-footer__link"><span>Крановые площадки</span></a>
 					</li>
 					
 					<li class="menu-footer__item">
@@ -392,7 +399,7 @@
 			</div>
 			<div class="footer__bottom-right">
 				<div class="footer__dis">
-					© 2018 « VELES»  Все права защищены.
+					© 2018 « VELES» Все права защищены.
 				</div>
 				<!-- /.footer__dis -->
 			</div>
@@ -420,32 +427,18 @@
 	/* Mapplic
 	======================*/
 	
-	var mapplicBlock = $('#mapplic');
-	
-	if (mapplicBlock) {
-		mapplicBlock.mapplic({
-			source: 'js/apartment.json',
-			height: 650,
-			animate: true,
-			mapfill: true,
-			sidebar: false,
-			minimap: false,
-			deeplinking: true,
-			fullscreen: true,
-			hovertip: true,
-			developer: false,
-			maxscale: 3
-		});
-	}
-	
-	$('.usage').click(function (e) {
-		e.preventDefault();
-		
-		$('.editor-window').slideToggle(200);
-	});
-	
-	$('.editor-window .window-mockup').click(function () {
-		$('.editor-window').slideUp(200);
+	$('#mapplic').mapplic({
+		source: 'js/apartment.json',
+		height: 720,
+		animate: true,
+		mapfill: true,
+		sidebar: false,
+		minimap: false,
+		deeplinking: true,
+		fullscreen: true,
+		hovertip: true,
+		developer: false,
+		maxscale: 1
 	});
 </script>
 
