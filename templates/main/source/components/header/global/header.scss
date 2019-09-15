@@ -16,7 +16,16 @@
 	}
 
 	&__phone {
-
+		display: flex;
+		align-items: center;
+		svg {
+			fill: #ffffff;
+			margin-right: 10px;
+			
+			.menu__link:hover & {
+				fill: #ffe500;
+			}
+		}
 	}
 	
 	&__blocks {
