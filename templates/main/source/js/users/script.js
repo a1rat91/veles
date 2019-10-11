@@ -103,7 +103,7 @@ $(document).ready(function () {
 	/* Phone mask
 	======================*/
 	
-	$('[type=tel]').mask("8 (999) 999-9999", {placeholder: "8 (Код) ___-____"});
+	// $('[type=tel]').mask("8 (999) 999-9999", {placeholder: "8 (Код) ___-____"});
 	
 	/*Wow
 	================*/

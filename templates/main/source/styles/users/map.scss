@@ -3,13 +3,16 @@
 	padding: 60px 0;
 	
 	&__desc {
-		margin-top: -120px;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 500;
+		margin-bottom: 40px;
 	}
 	
 	&__title {
 		@include section-title($text-transform: inherit);
 		letter-spacing: 0;
-		margin-bottom: 76px;
+		margin-bottom: 10px;
 		text-align: center;
 	}
 	

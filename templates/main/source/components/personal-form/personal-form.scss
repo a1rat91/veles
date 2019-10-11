@@ -19,6 +19,12 @@
 		}
 	}
 	
+	&__desc {
+		font-size: 20px;
+		letter-spacing: 0.03em;
+		text-align: center;
+	}
+	
 	&__form {
 		display: flex;
 		flex-direction: column;
