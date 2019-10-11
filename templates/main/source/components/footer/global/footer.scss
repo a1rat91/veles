@@ -78,6 +78,19 @@
 		}
 	}
 	
+	&__phone {
+		display: flex;
+		align-items: center;
+		svg {
+			fill: #ffffff;
+			margin-right: 10px;
+			
+			.menu__link:hover & {
+				fill: #ffe500;
+			}
+		}
+	}
+	
 	&__dis {
 		font-size: 10px;
 		color: rgba(255, 255, 255, .4);
@@ -97,7 +110,11 @@
 			font-size: 15px;
 			text-align: center;
 		}
-	
+		
+		&__phone {
+			justify-content: center;
+		}
+		
 		&__top {
 			height: auto;
 			align-items: center;
