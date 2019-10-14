@@ -17,7 +17,7 @@
 		&-top {
 			display: flex;
 			justify-content: space-between;
-			align-items: center;
+			align-items: flex-start;
 			width: 100%;
 		}
 	}
@@ -80,12 +80,14 @@
 	
 	&__phone {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		svg {
 			fill: #ffffff;
 			margin-right: 10px;
+			min-height: 13px;
+			min-width: 9px;
 			
-			.menu__link:hover & {
+			.menu-footer__link:hover & {
 				fill: #ffe500;
 			}
 		}
@@ -124,6 +126,8 @@
 			&-top {
 				display: flex;
 				flex-direction: column;
+				justify-content: center;
+				align-items: center;
 			}
 			
 			&-bottom {

@@ -5,11 +5,15 @@
 		padding: 0;
 		list-style-type: none;
 		display: flex;
-		flex-wrap: wrap;
 	}
 
 	&__item {
 		display: inline-block;
+		line-height: 1.45;
+		
+		&_addr {
+			max-width: 271px;
+		}
 	}
 	
 	&__link {
